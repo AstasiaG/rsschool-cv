@@ -8,17 +8,20 @@
 + [Discord](https://discordapp.com/users/557321605542445076)
 + Email: anstasa.li@gmail.com
 
-## About me
-
-
 ## Skills
 + HTML
 + CSS
 + JavaScript
-+ Git
++ Git / GitHub
 + Figma, Photoshop
 
 ## Code example
+ The function which takes a number and returns the corresponding ASCII char for that value
+```
+function getChar(c){
+  return String.fromCharCode(c);
+}
+```
 
 ## Education
 Nevskiy Design Institute of the University under the Interparliamentary Assembly of EurAsEC, Saint-Petersburg
@@ -26,5 +29,5 @@ Nevskiy Design Institute of the University under the Interparliamentary Assembly
 Specialty - Design
 
 ## Languages
-Russian (Native speaker)
-English (B1)
++ Russian (Native speaker)
++ English (B1 / Intermediate)
