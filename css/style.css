@@ -198,3 +198,18 @@ h4 {
   width: 40px;
   margin-right: 24px;
 }
+
+.code {
+  display: flex;
+  box-sizing: border-box;
+  width: 1180px;
+  margin: 90px auto;
+  padding: 47px 77px 15px;
+
+  background-color: var(--white);
+  border-radius: 33px;
+}
+
+.title-black {
+  color: var(--main-color);
+}
