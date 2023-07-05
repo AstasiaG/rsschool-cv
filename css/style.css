@@ -10,6 +10,7 @@
 }
 
 body {
+  font-size: 16px;
   font-family: 'Inter', sans-serif;
   background-color: var(--main-color);
 }
@@ -21,6 +22,8 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 48px;
+
   font-size: 48px;
   font-weight: 600;
   color: var(--white);
@@ -39,21 +42,27 @@ h4 {
 }
 
 .header {
+  width: 100%;
+
+  background: linear-gradient(to top, rgba(25,24,29,0) 0%, rgba(153,229,80,0.1) 100%);
+}
+
+.header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   width: 1180px;
-  margin: 10px auto 0;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .menu {
-  display: flex;
-
   list-style-type: none;
 }
 
 .menu__item {
+  display: inline;
   margin-right: 50px;
   padding: 10px;
 
@@ -73,20 +82,11 @@ h4 {
   border-radius: 45px;
 }
 
-.main__screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  background: linear-gradient(to top, rgba(25,24,29,0) 0%, rgba(153,229,80,0.1) 100%);
-}
-
 .content__wrapper {
   display: flex;
   justify-content: space-between;
   width: 1180px;
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 
 .content {
@@ -100,6 +100,7 @@ h4 {
 }
 
 .social__links {
+  display: flex;
   margin-top: 56px;
 }
 
@@ -110,4 +111,90 @@ h4 {
 .icon__big {
   width: 40px;
   color: var(--white);
+}
+
+.about__wrapper {
+  display: flex;
+  width: 1180px;
+  margin: 45px auto;
+}
+
+.skills__list {
+  box-sizing: border-box;
+  width: 380px;
+  margin-right: 170px;
+  padding: 40px;
+
+
+  background-color: #212024;
+  border: 2px solid var(--green);
+  border-radius: 33px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.skill__level {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 7px;
+}
+
+.skill__level-status {
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+  margin-left: 25px;
+}
+
+.point {
+  width: 13px;
+  height: 19px;
+
+  background-color: #797979;
+}
+
+.point-up {
+  background-color: var(--green);
+}
+
+.skill__description {
+  font-weight: 300;
+  color: var(--white);
+}
+
+.about__description {
+  color: var(--white);
+}
+
+.about__bottom {
+  display: flex;
+  margin-top: 52px;
+}
+
+.languages {
+  box-sizing: border-box;
+  width: 234px;
+  margin-right: 142px;
+}
+
+.title-green {
+  margin-bottom: 26px;
+  color: var(--green);
+}
+
+.language__item {
+  margin-bottom: 6px;
+  color: var(--white);
+}
+
+
+.icon {
+  width: 40px;
+  margin-right: 24px;
 }
