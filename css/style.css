@@ -135,7 +135,8 @@ h4 {
   margin-bottom: 20px;
 }
 
-.skill:last-child {
+.skill:last-child,
+.contacts__title {
   margin-bottom: 0;
 }
 
@@ -226,7 +227,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 1180px;
-  margin: 45px auto 0;
+  margin: 90px auto 0;
   padding: 32px 0;
 
   border-top: 2px solid var(--white);
@@ -244,4 +245,51 @@ h4 {
 .copyright {
   font-weight: 500;
   color: var(--green);
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  width: 1180px;
+  margin: 45px auto;
+  padding: 21px 77px;
+
+  background-color: #212024;
+  border: 2px solid var(--green);
+  border-radius: 33px;
+}
+
+.location {
+  padding-left: 50px;
+  margin-top: 8px;
+}
+
+.contacts__right,
+.contacts__center,
+.contacts__left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 75px;
+}
+
+.small-icon {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.link-contact {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.contacts__item:nth-child(2n) {
+  margin-bottom: 0px;
 }
