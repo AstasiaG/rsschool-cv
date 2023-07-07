@@ -262,12 +262,12 @@ h4 {
 
 .contacts {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
   align-items: center;
   width: 1180px;
   margin: 45px auto;
-  padding: 21px 77px;
+  padding: 21px 172px;
 
   background-color: #212024;
   border: 2px solid var(--green);
@@ -280,12 +280,17 @@ h4 {
   margin-top: 8px;
 }
 
-.contacts__right,
-.contacts__center,
 .contacts__left {
   display: flex;
   flex-direction: column;
   margin-right: 75px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80px;
 }
 
 .small-icon {
@@ -302,6 +307,7 @@ h4 {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  margin-right: 75px;
 }
 
 .contacts__item:nth-child(2n) {
