@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   font-family: 'Inter', sans-serif;
   background-color: var(--main-color);
-  background-image: url(/img/bg_field.svg);
+  background-image: url(../img/bg_field.svg);
   background-position: top;
   background-repeat: repeat-y;
 }
@@ -73,8 +73,7 @@ h4 {
   margin-right: 50px;
   padding: 10px;
 
-  text-align: center;
-  border-bottom: 0;
+  font-weight: 500;
 }
 
 .menu__item:hover {
@@ -82,7 +81,6 @@ h4 {
 }
 
 .link {
-  font-weight: 500;
   color: var(--green);
   text-decoration: none;
 }
@@ -90,15 +88,29 @@ h4 {
 .button {
   padding: 10px 38px;
 
+  font-weight: 500;
   background-color: #212024;
   border: 2px solid var(--green);
   border-radius: 45px;
   box-shadow: inset 0 0 17px rgba(153,229,80,0.17);
 }
 
-.button:hover {
+.button-border {
+  padding: 10px 38px;
+
+  font-weight: 500;
+  color: var(--main-color);
+  background-color: rgba(33, 32, 36, 0.1);
+  border: 2px solid var(--main-color);
+  border-radius: 45px;
+}
+
+.button:hover,
+.button-border:hover {
   color: var(--main-color);
   background-color: var(--green);
+  border: 2px solid var(--green);
+  transition: background-color 0.2s ease-in;
 }
 
 .content__wrapper {
@@ -109,8 +121,6 @@ h4 {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   padding: 119px 0 0;
 }
 
@@ -127,15 +137,19 @@ h4 {
   margin-right: 30px;
 }
 
-.icon__big {
-  width: 40px;
-  color: var(--white);
+.social__icon {
+  fill: var(--white);
+}
+
+.social__icon:hover {
+  fill: var(--green);
+  transition: all 0.2s ease-in-out;
 }
 
 .about__wrapper {
   display: flex;
   width: 1180px;
-  margin: 45px auto;
+  margin: 90px auto 45px;
 }
 
 .skills__list {
@@ -200,7 +214,6 @@ h4 {
 }
 
 .languages {
-  box-sizing: border-box;
   width: 234px;
   margin-right: 142px;
 }
@@ -237,94 +250,8 @@ h4 {
   color: var(--main-color);
 }
 
-.footer {
-  width: 100%;
-
-  background: linear-gradient(to bottom, rgba(25,24,29,0) 0%, rgba(153,229,80,0.1) 100%);
-}
-
-.footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1180px;
-  margin: 90px auto 0;
-  padding: 32px 0;
-
-  border-top: 2px solid var(--white);
-}
-
-.logo-rsschool {
-  width: 125px;
-  margin-right: 43px;
-}
-
-.logo-github {
-  width: 164px;
-}
-
-.copyright {
-  font-weight: 500;
-  color: var(--green);
-}
-
-.contacts {
-  display: flex;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  align-items: center;
-  width: 1180px;
-  margin: 45px auto;
-  padding: 21px 172px;
-
-  background-color: #212024;
-  border: 2px solid var(--green);
-  border-radius: 33px;
-  box-shadow: inset 0 0 17px rgba(153,229,80,0.17);
-}
-
-.location {
-  padding-left: 50px;
-  margin-top: 8px;
-}
-
-.contacts__left {
-  display: flex;
-  flex-direction: column;
-  margin-right: 75px;
-}
-
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 80px;
-}
-
-.small-icon {
-  width: 30px;
-  margin-right: 20px;
-}
-
-.link-contact {
-  font-weight: 400;
-  color: var(--white);
-}
-
-.contacts__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-  margin-right: 75px;
-}
-
-.contacts__item:nth-child(2n) {
-  margin-bottom: 0px;
-}
-
 .experience {
   display: flex;
-  box-sizing: border-box;
   width: 1180px;
   margin: 0 auto;
   padding: 45px 0;
@@ -390,6 +317,89 @@ h4 {
 .course__link {
   margin-left: 8px;
 
+  font-size: 16px;
   font-weight: 300;
   color: var(--white);
+}
+
+.contacts {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 1180px;
+  margin: 45px auto;
+  padding: 21px 172px;
+
+  background-color: #212024;
+  border: 2px solid var(--green);
+  border-radius: 33px;
+  box-shadow: inset 0 0 17px rgba(153,229,80,0.17);
+}
+
+.location {
+  padding-left: 50px;
+  margin-top: 8px;
+}
+
+.contacts__left {
+  margin-right: 75px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+.small-icon {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.link-contact {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  margin-right: 75px;
+}
+
+.contacts__item:nth-child(2n) {
+  margin-bottom: 0px;
+}
+
+.footer {
+  width: 100%;
+
+  background: linear-gradient(to bottom, rgba(25,24,29,0) 0%, rgba(153,229,80,0.1) 100%);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
+  margin: 90px auto 0;
+  padding: 32px 0;
+
+  border-top: 2px solid var(--white);
+}
+
+.logo-rsschool {
+  width: 125px;
+  margin-right: 43px;
+}
+
+.logo-github {
+  width: 164px;
+}
+
+.copyright {
+  font-weight: 500;
+  color: var(--green);
 }
