@@ -9,9 +9,20 @@
 
 ## Skills
 ****
++ HTML & CSS (Preprocessor SCSS, BEM methodology)
++ JavaScript
++ Jquery (basic)
++ Git
++ Webpack (basic)
++ Figma
+
 ## Code examples
 ****
+
 ## Education
 ****
+
 ## Languages
 ****
++ Russian (native)
++ English B1
