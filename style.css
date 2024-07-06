@@ -68,10 +68,16 @@ img {
 .text {
   font-size: 1.6rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .text-accent {
   font-size: 2rem;
+  font-weight: 500;
+}
+
+.text-m {
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -90,8 +96,6 @@ img {
   position: relative;
   display: inline-block;
   padding: 1rem;
-  font-size: 1.6rem;
-  font-weight: 500;
 }
 
 .menu__item::after {
@@ -141,4 +145,53 @@ img {
   margin-top: 8.2rem;
   display: flex;
   gap: 1.5rem;
+}
+
+.about {
+  position: relative;
+  padding: 11.1rem 0 13rem;
+  background-color: var(--blue);
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__content {
+  width: 59rem;
+}
+
+.about__languages {
+  margin-top: 14rem;
+}
+
+.about__education {
+  position: relative;
+  width: 59rem;
+  padding: 7.9rem 6.7rem;
+  background-color: var(--bg);
+}
+
+.about__image {
+  position: absolute;
+  bottom: 6.5rem;
+  right: 57rem;
+  z-index: 0;
+  width: 30rem;
+  height: 50rem;
+}
+
+.about__education-title {
+  margin: 4.7rem 0 2.8rem;
+}
+
+.about__courses-item {
+  display: flex;
+  justify-content: space-between;
+  width: 29rem;
+}
+
+.about__courses-item:last-child {
+  margin-bottom: 0;
 }
