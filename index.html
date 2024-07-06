@@ -44,10 +44,10 @@
             <span class="text-accent">Junior frontend developer</span>
             <div class="hero__links">
               <a class="hero__link link" href="#0">
-                <img class="link__icon" src="" alt="">
+                <img class="link__icon" src="./assets/svg/tg-icon.svg" alt="">
               </a>
               <a class="hero__link link" href="#0">
-                <img class="link__icon" src="" alt="">
+                <img class="link__icon" src="./assets/svg/gith-icon.svg" alt="">
               </a>
             </div>
           </div>
@@ -93,7 +93,75 @@
           </div>
         </div>
       </section>
-      <section class="skills"></section>
+      <section class="skills">
+        <div class="container skills__inner">
+          <div class="code">
+            <h2 class="title-m">Code example</h2>
+            <pre>
+              <code>
+                function dataReverse(data) {
+                 if (data === []){
+                   return [];
+                 } else {
+                 let str = data.join('');
+                 let arr = str.match(/.{8}/g);
+                 arr = arr.reverse().join('').match(/./g);
+                 return arr.map(e => +e);
+                 }
+                }
+              </code>
+            </pre>
+          </div>
+          <div class="skills__content">
+            <h2 class="title-m">Technical skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/html-g.png" alt="">
+                  <span class="text-m">HTML</span>
+                </div>
+                <span class="text">Basic syntax, semantic tags, forms and validations</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/css-g.png" alt="">
+                  <span class="text-m">CSS</span>
+                </div>
+                <span class="text">Basic syntax, flex box, positioning and CSS grid, SCSS preprocessor</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/js-g.png" alt="">
+                  <span class="text-m">Java<br>Script</span>
+                </div>
+                <span class="text">jQuery basic knowledge, JS constructs, arrays, functions, objects, maps</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                <img class="skills__item-img" src="./assets/img/mb-g.png" alt="">
+                  <span class="text-m">Module<br>bundlers</span>
+                </div>
+                <span class="text">Webpack, Gulp basic knowledge</span>
+              </li>
+            </ul>
+            <h3 class="title-sm">Software</h3>
+            <ul class="software__list">
+              <li class="software__item">
+                <img src="./assets/svg/VSCode_icon.svg" alt="">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/git-icon.svg" alt="">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/figma-icon.svg" alt="">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/PS-icon.svg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="projects"></section>
       <section class="contacts"></section>
     </main>
