@@ -5,8 +5,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li class="menu__item text-m">
+              <a class="link" href="#about">About</a>
+            </li>
+            <li class="menu__item text-m">
+              <a class="link" href="#projects">Projects</a>
+            </li>
+            <li class="menu__item text-m">
+              <a class="link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item text-m">
+              <a class="link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <a href="#0">Download CV</a> -->
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__bg">
+            <img src="./assets/img/Hello.png" alt="hello">
+          </div>
+          <img class="hero__img" src="./assets/img/hero.png" alt="photo">
+          <div class="hero__content">
+            <h1 class="title">Hi there!<br>I’m Anastasia</h1>
+            <span class="text-accent">Junior frontend developer</span>
+            <div class="hero__links">
+              <a class="hero__link link" href="https://t.me/anstasa_li">
+                <img class="link__icon" src="./assets/svg/tg-icon.svg" alt="telegram icon">
+              </a>
+              <a class="hero__link link" href="https://github.com/AstasiaG">
+                <img class="link__icon" src="./assets/svg/gith-icon.svg" alt="github icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container about__inner">
+          <div class="about__content">
+            <h2 class="title-m">About me</h2>
+            <p class="text">
+              I’m a novice front-end developer. At the moment I study JavaScript/Front-end course at RS School. I like complex tasks and try to find the 
+              most convenient ways to solve them. Highly motivated for quality and hard work. Every day I try to learn something new that will help me do 
+              my job better.
+            </p>
+            <p class="text">
+              I love games and various interactive elements that can be used on websites. This is so much fun!
+            </p>
+            <div class="about__languages">
+              <h2 class="title-m">Languages</h2>
+              <p class="text">Russian (Native)</p>
+              <p class="text">English (B1 / Pre-Intermidiate)</p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="./assets/img/about-img.png" alt="">
+          </div>
+          <div class="about__education">
+            <h2 class="title-m">Education</h2>
+            <p class="text">
+              Nevskiy Design Institute of the University under the Interparliamentary Assembly of EurAsEC
+            </p>
+            <span class="text-m">Specialty - Design </span>
+            <h3 class="title-sm about__education-title">Courses</h3>
+            <div class="about__courses-item">
+              <span class="text-m">HTML and CSS</span><a class="link text" href="https://code-basics.com/ru">code-basics.com</a>
+            </div>
+            <div class="about__courses-item">
+              <span class="text-m">JavaScript</span><a class="link text" href="https://learn.javascript.ru/">learnjavascript.ru</a>
+            </div>
+            <div class="about__courses-item">
+              <span class="text-m">Front-end/ Stage 0</span><a class="link text" href="https://rs.school/">rs-school.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container skills__inner">
+          <div class="code">
+            <h2 class="title-m">Code example</h2>
+            <pre>
+              <code>
+                function dataReverse(data) {
+                 if (data === []){
+                   return [];
+                 } else {
+                 let str = data.join('');
+                 let arr = str.match(/.{8}/g);
+                 arr = arr.reverse().join('').match(/./g);
+                 return arr.map(e => +e);
+                 }
+                }
+              </code>
+            </pre>
+          </div>
+          <div class="skills__content">
+            <h2 class="title-m">Technical skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/html-g.png" alt="html diagram">
+                  <span class="text-m">HTML</span>
+                </div>
+                <span class="text">Basic syntax, semantic tags, forms and validations</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/css-g.png" alt="css diagram">
+                  <span class="text-m">CSS</span>
+                </div>
+                <span class="text">Basic syntax, flex box, positioning and CSS grid, SCSS preprocessor</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                  <img class="skills__item-img" src="./assets/img/js-g.png" alt="Js diagram">
+                  <span class="text-m">Java<br>Script</span>
+                </div>
+                <span class="text">jQuery basic knowledge, JS constructs, arrays, functions, objects, maps</span>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-diagram">
+                <img class="skills__item-img" src="./assets/img/mb-g.png" alt="module diagram">
+                  <span class="text-m">Module<br>bundlers</span>
+                </div>
+                <span class="text">Webpack, Gulp basic knowledge</span>
+              </li>
+            </ul>
+            <h3 class="title-sm">Software</h3>
+            <ul class="software__list">
+              <li class="software__item">
+                <img src="./assets/svg/VSCode_icon.svg" alt="vsCode icon">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/git-icon.svg" alt="git icon">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/figma-icon.svg" alt="figma icon">
+              </li>
+              <li class="software__item">
+                <img src="./assets/svg/PS-icon.svg" alt="photoshop icon">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container projects__inner">
+          <div class="projects__bg">
+            <img src="./assets/img/Projects.png" alt="projects">
+          </div>
+          <div class="projects__content">
+            <h2 class="title-m">Projects</h2>
+            <div class="projects__list">
+              <div class="projects__item">
+                <img class="projects__item-img" src="./assets/img/project1.png" alt="project1 img">
+                <p class="title-sm">Runo</p>
+                <div class="projects__links">
+                  <a class="projects__link link text-m" href="https://github.com/AstasiaG/runo">Code</a>
+                  <a class="projects__link link text-m" href="https://astasiag.github.io/runo/dist/">Deploy</a>
+                </div>
+              </div>
+              <div class="projects__item">
+                <img class="projects__item-img" src="./assets/img/project2.png" alt="project2 img">
+                <p class="title-sm">Rustil</p>
+                <div class="projects__links">
+                  <a class="projects__link link text-m" href="https://github.com/AstasiaG/Rustil">Code</a>
+                  <a class="projects__link link text-m" href="astasiag.github.io/Rustil/dist/">Deploy</a>
+                </div>
+              </div>
+              <div class="projects__item">
+                <img class="projects__item-img" src="./assets/img/project3.png" alt="project3 img">
+                <p class="title-sm">UI-Bar</p>
+                <div class="projects__links">
+                  <a class="projects__link link text-m" href="https://github.com/RequestDesign/UI-BAR">Code</a>
+                  <a class="projects__link link text-m" href="https://willowy-chaja-1e6192.netlify.app/">Deploy</a>
+                </div>
+              </div>
+              <div class="projects__item">
+                <img class="projects__item-img" src="./assets/img/project4.png" alt="project4 img">
+                <p class="title-sm">Dell test</p>
+                <div class="projects__links">
+                  <a class="projects__link link text-m" href="https://github.com/AstasiaG/Nti_test">Code</a>
+                  <a class="projects__link link text-m" href="https://astasiag.github.io/Nti_test/">Deploy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience">
+            <h2 class="title-m">Experience</h2>
+            <p class="text">2023-2024<span class="text-m">Request design</span></p>
+            <span class="text">Web Developer / Front-end Developer</span>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container contacts__inner">
+          <div class="contacts__title">
+            <h2 class="title-m">Contact Info</h2>
+            <span class="text">Saint-Petersburg,<br>Russia</span>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="link text" href="tel:+79956268381">
+                <img class="link__icon" src="./assets/svg/phone-icon.svg" alt="phone icon">
+                +7 995 626 83 81
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="link text" href="mailto:anstasa.li@gmail.com">
+                <img class="link__icon" src="./assets/svg/mail-icon.svg" alt="mail icon">
+                anstasa.li@gmail.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="link text" href="https://t.me/anstasa_li">
+                <img class="link__icon" src="./assets/svg/tg-icon.svg" alt="telegram icon">
+                @anstasa.li
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="link text" href="https://github.com/AstasiaG">
+                <img class="link__icon" src="./assets/svg/gith-icon.svg" alt="github icon">
+                @astasiag
+              </a>
+            </li>
+          </ul>
+          <div class="contacts__img">
+            <img src="./assets/img/contacts-img.png" alt="bg imsge">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer__inner">
+        <div class="footer__links">
+          <a class="footer__link link" href="https://rs.school/courses/javascript-ru">
+            <img src="./assets/svg/rsschool.svg" alt="rsschool icon">
+          </a>
+          <a class="footer__link link" href="https://github.com/AstasiaG">
+            <img src="./assets/svg/github-icon.svg" alt="github icon">
+          </a>
+        </div>
+        <span class="text-accent">2024</span>
+      </div>
+    </footer>
   </body>
 </html>
